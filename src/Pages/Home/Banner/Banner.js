@@ -28,7 +28,7 @@ const Banner = () => {
                             Starts Here
                         </Typography>
                         <Typography variant="h6" sx={{ my: 3, fontSize: 13, fontWeight: 300, color: 'gray' }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil asperiores velit illum enim incidunt doloremque vitae impedit at accusantium tenetur.
+                            Dental caries or cavities, more commonly known as tooth decay, are caused by a breakdown of the tooth enamel. This breakdown is the result of bacteria on teeth that breakdown foods and produce acid that destroys tooth enamel and results in tooth decay.
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Get Appointment</Button>
                     </Box>
