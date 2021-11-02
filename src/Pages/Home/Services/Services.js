@@ -18,12 +18,12 @@ const services = [
         name: 'Cavity Filling',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas',
         img: cavity
+    },
+    {
+        name: 'Teeth Whitening',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas',
+        img: whitening
     }
-    // {
-    //     name: 'Teeth Whitening',
-    //     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa cumque enim! Voluptatibus aliquid expedita saepe accusantium itaque ducimus rem voluptas',
-    //     img: whitening
-    // }
 ]
 
 
