@@ -35,7 +35,7 @@ const AppointmentBanner = () => {
                             Make an Appointment Today
                         </Typography>
                         <Typography variant="h6" sx={{ my: 5 }} style={{ color: 'white', fontSize: 14, fontWeight: 300 }}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi facere totam aliquam praesentium vel. Amet veniam odio vero doloremque laborum.
+                            It is a long established fact that e reader will be distractedby the readable content of a page when looking at its.
                         </Typography>
                         <Button variant="contained" style={{ backgroundColor: '#5CE7ED' }}>Learn More</Button>
                     </Box>
