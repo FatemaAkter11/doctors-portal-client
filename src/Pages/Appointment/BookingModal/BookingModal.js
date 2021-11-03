@@ -49,7 +49,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date }) => {
                     <Typography id="transition-modal-title" variant="h6" component="h2">
                         {name}
                     </Typography>
-                    <form onSubmit={handleBookingSubmit}>
+                    {/* <form onSubmit={handleBookingSubmit}>
                         <TextField
                             disabled
                             sx={{ width: '90%', m: 1 }}
@@ -83,7 +83,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date }) => {
                             size="small"
                         />
                         <Button type="submit" variant="contained">Submit</Button>
-                    </form>
+                    </form> */}
                 </Box>
             </Fade>
         </Modal>

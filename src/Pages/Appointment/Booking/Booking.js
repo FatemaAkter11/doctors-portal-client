@@ -3,7 +3,7 @@ import React from 'react';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-// import BookingModal from '../BookingModal/BookingModal';
+import BookingModal from '../BookingModal/BookingModal';
 
 
 const Booking = ({ booking, date }) => {
@@ -27,12 +27,12 @@ const Booking = ({ booking, date }) => {
                     <Button onClick={handleBookingOpen} variant="contained">BOOK APPOINTMENT</Button>
                 </Paper>
             </Grid>
-            {/* <BookingModal
+            <BookingModal
                 date={date}
                 booking={booking}
                 openBooking={openBooking}
                 handleBookingClose={handleBookingClose}
-            ></BookingModal> */}
+            ></BookingModal>
         </>
     );
 };
