@@ -2,16 +2,16 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 
-const Appointments = () => {
+const Appointments = ({ date }) => {
     const { user } = useAuth();
     const [appointments, setAppointments] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/appointments?email=${user.email}`
+        const url = `http://localhost:5000/appointments?email=${user.email}&date=${date}`
         fetch(url)
             .then(res => res.json())
             .then(data => setAppointments(data));
-    }, [])
+    }, [date])
 
     return (
         <div>
