@@ -74,7 +74,25 @@ const CheckoutForm = ({ appointment }) => {
             setSuccess('Your payment processed successfully.')
             console.log(paymentIntent);
             setProcessing(false);
+            // save to database
+            const payment = {
+                amount: paymentIntent.amount,
+                created: paymentIntent.created,
+                last4: paymentMethod.card.last4,
+                transaction: paymentIntent.client_secret.slice('_secret')[0]
+            }
+            const url = `http://localhost:5000/appointments/${_id}`;
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(payment)
+            })
+                .then(res => res.json())
+                .then(data => console.log(data));
         }
+
     }
 
     return (
