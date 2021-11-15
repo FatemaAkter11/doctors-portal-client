@@ -8,6 +8,13 @@ const CheckoutForm = () => {
     const handleSubmit = async (event) => {
         // Block native form submission.
         event.preventDefault();
+        if (!stripe || !elements) {
+            return;
+        }
+        const card = elements.getElement(CardElement);
+        if (card === null) {
+            return;
+        }
     }
     return (
         <div>
